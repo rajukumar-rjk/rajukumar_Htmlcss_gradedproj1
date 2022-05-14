@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="test-booking-form.css" />
+  </head>
+  <body>
+    <form action="" class="content_container">
+      <div class="form_img">
+        <div class="form_container">
+          <div class="detail">
+            <h2 class="detail_section">1. Your Contact Details</h2>
+            <div class="detail_content">
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Full Name"
+                required
+                class="enter_details"
+              />
+              <input
+                type="text"
+                id="patientId"
+                name="patientId"
+                placeholder="Patient Id if exists"
+                required
+                class="enter_details"
+              />
+              <input
+                type="text"
+                id="phNo"
+                name="phNo"
+                placeholder="Contact Number"
+                required
+                class="enter_details"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Id"
+                required
+                class="enter_details"
+              />
+            </div>
+          </div>
+          <div class="detail">
+            <h2 class="detail_section">2. Address</h2>
+            <div class="detail_content">
+              <input
+                type="text"
+                id="houseNo"
+                name="houseNo"
+                placeholder="H-No"
+                required
+                class="enter_details"
+              />
+              <input
+                type="text"
+                id="street"
+                name="street"
+                placeholder="Street"
+                required
+                class="enter_details"
+              />
+              <input
+                type="text"
+                id="area"
+                name="area"
+                placeholder="Area"
+                required
+                class="enter_details"
+              />
+              <p id="district_head">District</p>
+              <select
+                name="District"
+                id="district"
+                required
+                class="enter_details"
+              >
+                <option value="">Choose</option>
+                <option value="Bangalore Urban">Bangalore Urban</option>
+                <option value="Bangalore Rural">Bangalore Rural</option>
+                <option value="Ramnagar">Ramnagar</option>
+              </select>
+            </div>
+          </div>
+          <div class="detail">
+            <h2 class="detail_section">3. Test Type</h2>
+            <div class="detail_content">
+              <p>Check atleast one box without fail.</p>
+              <p class="checkbox_details">
+                <input type="checkbox" id="tt1" name="tt1" value="CBC" />
+                <label for="tt1">CBC</label>
+              </p>
+
+              <p class="checkbox_details">
+                <input
+                  type="checkbox"
+                  id="tt2"
+                  name="tt2"
+                  value="Complete Urine"
+                />
+                <label for="tt2">Complete Urine</label>
+              </p>
+
+              <p class="checkbox_details">
+                <input
+                  type="checkbox"
+                  id="tt3"
+                  name="tt3"
+                  value="Lipid Profile"
+                />
+                <label for="tt3">Lipid Profile</label>
+              </p>
+
+              <p class="checkbox_details">
+                <input
+                  type="checkbox"
+                  id="tt4"
+                  name="tt4"
+                  value="Thyroid Stimulating Hormone(TSH)"
+                />
+                <label for="tt4">Thyroid Stimulating Hormone(TSH)</label>
+              </p>
+
+              <p class="checkbox_details">
+                <input
+                  type="checkbox"
+                  id="tt5"
+                  name="tt5"
+                  value="Glucose Test"
+                />
+                <label for="tt5">Glucose Test</label>
+              </p>
+            </div>
+          </div>
+          <div class="detail">
+            <h2 class="detail_section">4. Do you want a hard copy?</h2>
+            <div class="detail_content">
+              <p class="radio_details">
+                <input type="radio" id="hc1" name="hc" value="True" required />
+                <label for="hc1">Yes</label>
+              </p>
+
+              <p class="radio_details">
+                <input type="radio" id="hc2" name="hc" value="False" />
+                <label for="hc2">No</label>
+              </p>
+            </div>
+          </div>
+          <div class="detail">
+            <h2 class="detail_section">
+              5. Select your comfortable date and time.
+            </h2>
+            <div id="dateTime">
+              <input type="datetime-local" value="datetime-local" required />
+            </div>
+          </div>
+        </div>
+        <div class="lab_test_img_container">
+          <img src="Images/Lab-Test/lab-test.jpg" />
+        </div>
+      </div>
+      <div class="form_action">
+        <input type="reset" value="Reset" class="form_button" />
+        <input type="submit" value="Submit" class="form_button" />
+      </div>
+    </form>
+  </body>
+</html>
